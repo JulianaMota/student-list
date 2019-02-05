@@ -13,10 +13,10 @@ function showStudents(studentList) {
     console.log(student.fullname);
     const clone = template.cloneNode(true);
 
-    clone.querySelector("h2").textContent = student.house;
-    clone.querySelector("h1").textContent = student.fullname;
+    clone.querySelector("h2 span").textContent = student.house;
+    clone.querySelector("h1 span").textContent = student.fullname;
 
-    document.querySelector("main").appendChild(clone);
+    document.querySelector("ul").appendChild(clone);
   });
 }
 
