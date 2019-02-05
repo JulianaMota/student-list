@@ -10,9 +10,11 @@ function getStudents() {
 function showStudents(studentList) {
   console.log(studentList);
   studentList.forEach(student => {
-    console.log(student);
+    console.log(student.fullname);
     const clone = template.cloneNode(true);
-    //clone.querySelector("h1").textContent = fullname;
+
+    clone.querySelector("h2").textContent = student.house;
+    clone.querySelector("h1").textContent = student.fullname;
 
     document.querySelector("main").appendChild(clone);
   });
