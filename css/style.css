@@ -47,3 +47,12 @@ li h2 {
   font-size: 20px;
   padding: 5px;
 }
+@media all and (max-width: 750px) {
+  ul {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  main {
+    padding: 0 40px 0 40px;
+  }
+}
